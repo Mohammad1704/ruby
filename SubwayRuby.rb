@@ -1,7 +1,7 @@
 # first start from one task 
 
 # Park_Street = 'Park Street'
-subway =
+$subway =
  {
     "Red_line": ["South Station", "Park Street", "Kendall", "Central", "Harvard", "Porter", "Davis", "Alewife"],
     "Green_line": ["Government Center","Park Street","Boylston","Arlington","Copley","Hynes","Kenmore"],
@@ -23,47 +23,47 @@ subway =
   start_line = [] 
   last_line = []
   
-class Journy_info
-  attr_accessor :station
-  attr_accessor :line
-  def initialize(line,station)
-    @line = line
-@station = station
-  end 
-    def what_station
-      puts"||type your first Station"
-      station = gets.chomp 
-  puts station
-    puts"||in which line ?"
-    line= gets.chomp
-    if line == "Red_line"
-      start_line = subway[:Red_line]
+# class Journy_info
+#   attr_accessor :station
+#   attr_accessor :line
+#   def initialize(line,station)
+#     @line = line
+# @station = station
+#   end 
+#     def what_station
+#       puts"||type your first Station"
+#       station = gets.chomp 
+#   puts station
+#     puts"||in which line ?"
+#     line= gets.chomp
+#     if line == "Red_line"
+#       start_line = subway[:Red_line]
       
-    elsif line == "Green_line"
-      start_line = subway[:Green_line]
+#     elsif line == "Green_line"
+#       start_line = subway[:Green_line]
   
-      elsif line == "Orange_line"
-        start_line = subway[:Orange_line]
-    end
-end
-end
+#       elsif line == "Orange_line"
+#         start_line = subway[:Orange_line]
+#     end
+# end
+# end
 
-fun_station1 = Journy_info.new("Red_line","South Station")
-puts fun_station1.what_station
-# puts"||type your end Station"
-#  first_sta = gets.chomp 
-# puts first_sta
-#   puts"||in which line ?"
-#   line_coloer= gets.chomp
-#   if line_coloer == "Red_line"
-#     start_line = subway[:Red_line]
+# fun_station1 = Journy_info.new("Red_line","South Station")
+# puts fun_station1.what_station
+puts"||type your fisrt Station"
+ first_sta = gets.chomp 
+puts first_sta
+  puts"||in which line ?"
+  line_coloer= gets.chomp
+  if line_coloer == "Red_line"
+    start_line = $subway[:Red_line]
     
-#   elsif line_coloer == "Green_line"
-#     start_line = subway[:Green_line]
+  elsif line_coloer == "Green_line"
+    start_line = $subway[:Green_line]
 
-#     elsif line_coloer == "Orange_line"
-#       start_line = subway[:Orange_line]
-#   end
+    elsif line_coloer == "Orange_line"
+      start_line = $subway[:Orange_line]
+  end
  #1rvrs method
   #put it in function 
 
@@ -78,13 +78,13 @@ puts fun_station1.what_station
    puts"||in which line ?"
    line_coloer= gets.chomp
    if line_coloer == "Red_line"
-     last_line = subway[:Red_line]
+     last_line = $subway[:Red_line]
      
    elsif line_coloer == "Green_line"
-    last_line = subway[:Green_line]
+    last_line = $subway[:Green_line]
  
      elsif line_coloer == "Orange_line"
-      last_line = subway[:Orange_line]
+      last_line = $subway[:Orange_line]
    end
  
 if start_line == last_line
