@@ -7,12 +7,13 @@ subway =
 }
 
 
-# puts"put ur start line "
+# puts"what is your start line " #<<==== I want to use staline to make it like input user
 
 # staline = gets.chomp
 # puts staline
+
 puts"put ur start Station "
- first_sta = gets.chomp.to_s #<<==== I want to use sta to make it like input user
+ first_sta = gets.chomp.to_s 
 puts first_sta
 puts"put ur end Station "
 last_sta = gets.chomp.to_s
